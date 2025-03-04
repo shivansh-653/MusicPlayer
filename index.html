@@ -21,13 +21,16 @@
             <img src="media/shakti.png" class="songImg" alt="Thumbnail">
             <h1>Khush Nahi</h1>
             <p>Seedhe Maut</p>
-            <audio controls>
+            <audio id="song">
                 <source src="media/Khush_Nahi.mp3" type="audio/mpeg">
             </audio>
+            <div class="time">
+                
+            </div>
             <input type="range" value="0" id="progress">
             <div class="controls">
                 <div> <i class="fa-solid fa-backward-step"></i> </div>
-                <div> <i class="fa-solid fa-play"></i> </div>
+                <div onclick="playPause()"> <i id="ctrlIcon" class="fa-solid fa-play"></i> </div>
                 <div> <i class="fa-solid fa-forward-step"></i> </div>
             </div>
         </div>
