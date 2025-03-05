@@ -19,15 +19,17 @@
                 </div>
             </nav>
             <img src="media/shakti.png" class="songImg" alt="Thumbnail">
-            <h1>Khush Nahi</h1>
-            <p>Seedhe Maut</p>
+            <div class="songname">
+                <h1>Khush Nahi</h1>
+                <p>Seedhe Maut</p>
+            </div>
             <audio id="song">
                 <source src="media/Khush_Nahi.mp3" type="audio/mpeg">
             </audio>
+            <input type="range" value="0" id="progress">
             <div class="time">
                 <span id="currentTime">0:00</span>  <span id="duration">0:00</span>
             </div>
-            <input type="range" value="0" id="progress">
             <div class="controls">
                 <div> <i class="fa-solid fa-backward-step"></i> </div>
                 <div onclick="playPause()"> <i id="ctrlIcon" class="fa-solid fa-play"></i> </div>
